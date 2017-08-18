@@ -3,7 +3,9 @@ title: BKHole
 subtitle: A blog-orientation theme for Jekyll
 welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
 description: Welcome to my house.
+creator: <a href="https://github.com/BKHole">@onevcat</a>
 
+url: "http://vno.onevcat.com"
 
 permalink: /:year/:month/:title/
 
@@ -35,11 +37,11 @@ comment:
     
 # Social
 social:
-    weibo: <a href="http://weibo.com/u/5183157681" target="_blank"></a>
-    github: <a href="https://github.com/BKHole" target="_blank"></a>
-    twitter: 
+    weibo: onevcat
+    github: onevcat
+    twitter: onevcat
     gplus: 107108267983477358170
-    mail: 1332051236@qq.com
+    mail: onev@onevcat.com
 
 # Google Analytics
 ga:
