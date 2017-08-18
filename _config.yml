@@ -1,11 +1,9 @@
 # Basic
-title: Vno Jekyll
+title: BKHole
 subtitle: A blog-orientation theme for Jekyll
 welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
-description: Vno Jekyll is a port of my Ghost theme vno.
-creator: <a href="http://onev.cat">@onevcat</a>
+description: Welcome to my house.
 
-url: "http://vno.onevcat.com"
 
 permalink: /:year/:month/:title/
 
@@ -22,7 +20,7 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    - {title: Projects, description: My Projects, url: 'https://github.com/BKHole'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
@@ -37,11 +35,11 @@ comment:
     
 # Social
 social:
-    weibo: onevcat
-    github: onevcat
-    twitter: onevcat
+    weibo: <a href="http://weibo.com/u/5183157681" target="_blank"></a>
+    github: <a href="https://github.com/BKHole" target="_blank"></a>
+    twitter: 
     gplus: 107108267983477358170
-    mail: onev@onevcat.com
+    mail: 1332051236@qq.com
 
 # Google Analytics
 ga:
