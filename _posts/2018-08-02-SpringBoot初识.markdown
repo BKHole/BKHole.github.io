@@ -1,3 +1,9 @@
+---
+layout: post
+title: SpringBoot初识
+date: 2018-08-02
+---
+
 #### 1、什么是SpringBoot？
 - SpringBoot帮助开发者快速搭建Spring框架
 - SpringBoot帮助开发者快速启动一个Web容器
