@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     $('.btn-mobile-menu__icon').toggleClass('fa fa-list fa fa-angle-up animated fadeIn');
   });
-  let landInTexts = document.querySelectorAll(".panel-cover__description");
+  let landInTexts = document.querySelectorAll(".custom");
   landInTexts.forEach(landInText => {
     let letters = landInText.textContent.split("");
     landInText.textContent = "";
