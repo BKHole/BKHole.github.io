@@ -49,13 +49,14 @@ $(document).ready(function () {
 
     $('.btn-mobile-menu__icon').toggleClass('fa fa-list fa fa-angle-up animated fadeIn');
   });
-  $('.panel-cover__description').forEach(landInText => {
+  let landInTexts = document.querySelectorAll(".panel-cover__description");
+  landInTexts.forEach(landInText => {
     let letters = landInText.textContent.split("");
     landInText.textContent = "";
     letters.forEach((letter, i) => {
       let span = document.createElement("span");
       span.textContent = letter;
-      span.style.animationDelay = `${i * 0.05}s`;
+      span.style.animationDelay = `${i * 0.5}s`;
       landInText.append(span);
     });
   });
