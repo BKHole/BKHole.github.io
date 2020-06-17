@@ -66,6 +66,9 @@
 
   .panel-cover__description {
     margin: 0 30px;
+    span {
+      animation: landIn 0.8s ease-out both;
+    }
   }
 
   .panel-cover__divider {
@@ -161,4 +164,16 @@
 
 .cover-disabled {
   background: none;
+}
+
+@keyframes landIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
