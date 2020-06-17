@@ -1,7 +1,7 @@
 # Basic
 title: Taomi
 subtitle: web coder
-welcome_message: <a href="https://github.com/BKHole" target="_blank">Welcome to my house</a>
+welcome_message: <a class='welcome' href="https://github.com/BKHole" target="_blank">Welcome to my house</a>
 creator: <a href="https://github.com/BKHole">@Taomi</a>
 
 url: "https://bkhole.github.io/"
