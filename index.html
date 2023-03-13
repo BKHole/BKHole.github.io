@@ -1,23 +1,49 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang=en>
 
-<div class="main-post-list hidden">
+<head>
+  <meta charset=UTF-8>
+  <title>审计查验</title>
+  <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <link href=http://acc.mof.gov.cn/qrcapp/css/chunk-antd.8f6e0355.css rel=preload as=style>
+  <link href=http://acc.mof.gov.cn/qrcapp/css/search.b71d89fe.css rel=preload as=style>
+  <link href=http://acc.mof.gov.cn/qrcapp/js/chunk-antd.564c0025.js rel=preload as=script>
+  <link href=http://acc.mof.gov.cn/qrcapp/js/chunk-libs.21147d91.js rel=preload as=script>
+  <link href=http://acc.mof.gov.cn/qrcapp/js/chunk-vue.b129bf20.js rel=preload as=script>
+  <link href=http://acc.mof.gov.cn/qrcapp/js/search.88335786.js rel=preload as=script>
+  <link href=http://acc.mof.gov.cn/qrcapp/css/chunk-antd.8f6e0355.css rel=stylesheet>
+  <link href=http://acc.mof.gov.cn/qrcapp/css/search.b71d89fe.css rel=stylesheet>
+</head>
 
-  <ol class="post-list">
-    {% for post in paginator.posts %}
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="{{ post.url }}"
-          title="访问 {{ post.title }}">{{ post.title }}</a></h2>
-      <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
-      <div class="post-list__meta"><time datetime="{{post.date | date: date_to_xmlschema}}"
-          class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span
-          class="post-list__meta--tags tags">{{ post.tags }}</span><a class="btn-border-small"
-          href={{ post.url }}>继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-    {% endfor %}
-  </ol>
+<body>
+  <div id=app></div>
+  <script>// 判断是IE浏览器，则提示换浏览器
+    var userAgent = navigator.userAgent;  // 取得浏览器的 userAgent
+    var isIE = false
+    if (userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !userAgent.indexOf("Opera") > -1) {
+      isIE = true
+    }
+    if (navigator.appVersion.indexOf("MSIE") != -1) {
+      isIE = true
+    }
+    if (!!window.ActiveXObject || "ActiveXObject" in window) {
+      isIE = true
+    }
+    if ("\v" == "v") {
+      isIE = true
+    }
+    if (!-[1,]) {
+      isIE = true
+    }
+    if (isIE) {
+      document.getElementById('app').innerHTML = '<div style="text-align: center; margin-top: 30px; font-size: 18px; color: #f00;">' +
+        '系统暂不支持IE浏览器和360浏览器兼容模式，请使用360浏览器极速模式或谷歌浏览器' +
+        '</div>'
+    }</script>
+  <script src="http://acc.mof.gov.cn/qrcapp/js/chunk-vue.b129bf20.js"></script>
+  <script src="http://acc.mof.gov.cn/qrcapp/js/chunk-antd.564c0025.js"></script>
+  <script src='http://acc.mof.gov.cn/qrcapp/js/chunk-libs.21147d91.js'></script>
+  <script src='http://acc.mof.gov.cn/qrcapp/js/search.88335786.js'></script>
+</body>
 
-  {% include pagination.html %}
-</div>
+</html>
